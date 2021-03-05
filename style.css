@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter',sans-serif;
+}
+
+.navbar {
+  margin: auto;
+  width: 90vw;
+  /* border: 3px solid black; */
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =================Hamburger Menu ==================*/
+.box {
+  /* border-style: solid;
+  border-width: 3px; */
+  cursor: pointer;
+  width: 100px;
+  height: 90px;
+}
+
+.line1 {
+  border-style: solid;
+  border-width: 3px;
+  width: 50px;
+  position: relative;
+  top: 20px;
+  left: 23px;
+}
+
+.line2 {
+  border-style: solid;
+  border-width: 3px;
+  width: 50px;
+  position: relative;
+  position: relative;
+  top: 40px;
+  left: 23px;
+}
+
+.line3 {
+  background-color: #fff;
+  border-style: solid;
+  border-width: 3px;
+  width: 25px;
+  position: relative;
+  top: 60px;
+  left: 35px;
+  transition:  transform 2s, left;
+}
+
+
+.line3:hover {
+  background: #fff;
+  transform: scaleX(-1.9);
+}
+/* ======================================================= */
+/* ================Poza de buletin======================== */
+
+figcaption {
+  margin: auto;
+  width: 90vw;
+  height: 50vh;
+  /* border: 3px solid black; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ball {
+  display: block;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  background: #E6E035;
+  position: relative;
+  top: 30px;
+  left: 40%;
+}
+.my-portret {
+  border-radius: 90px;
+  position: relative;
+  top: -50px;
+  left: 40%;
+}
+
+.links {
+  position: relative;
+  top: -30px;
+  margin: auto;
+  /* border: 3px solid black; */
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.linkedin {
+  padding-left: 160px;
+}
+.github {
+  padding: 1px;
+}
+.facebook {
+  padding-right: 140px;
+}
+p {
+  text-align: center;
+  font-weight: 600;
+}
+h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 1,2;
+  padding: 50px;
+}
+
+.button {
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  background-color: black;
+  padding: 10px 15px 10px 15px;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-ball {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.le-button {
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  padding: 45px;
+  width: 70vw;
+  margin: auto;
+  border-bottom: 1px solid black;
+}
+
+/* ------------------SUBMENIU----------------- */
+.sub-menu {
+  margin: auto;
+  width: 90vw;
+  /* border: 3px solid black; */
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sub-menu  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-menu > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sub-menu > ul > li {
+  list-style: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sub-menu-ul {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.a:hover {
+  text-decoration: line-through;
+}
+.b:hover {
+  text-decoration: line-through;
+}
+.c:hover {
+  text-decoration: line-through;
+}
+.d:hover {
+  text-decoration: line-through;
+}
+.e:hover {
+  text-decoration: line-through;
+}
+/* ========================================== */
+.pada1 {
+  padding-left: 200px;
+}
+.pada2 {
+  padding-right: 200px;
+}
+/* ============================================= */
+
+/* ------------Zona cu pozne----------- */
+
+.gallery {
+  margin: auto;
+  width: 90vw;
+  /* border: 3px solid black; */
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section {
+  text-align: center;
+  padding: 3rem 10px;
+}
+
+/* =========modificarea pozelor in album ========*/
+.cooll, .design-cool, .water-cool,
+.branding-cool, .mobile-cool, .pack-cool {
+  overflow: hidden;
+}
+/* .cooll img {
+  transform-origin: 0 0;
+  transition: transform .25s, visibility .25s ease-in;
+}
+
+.cooll:hover img {
+  transform: scale(2);
+} */
+
+.cooll img,.design-cool img,.water-cool img,
+.branding-cool img, .mobile-cool img, .pack-cool img{
+  transition: transform .5s, filter 1.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.cooll:hover img,.design-cool:hover img,.water-cool:hover img,
+.branding-cool:hover img,.mobile-cool:hover img,.pack-cool:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+h2 {
+  padding-top: 15px;
+}
+
+/* butonul rotund more */
+
+.round-btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.cerc {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #f9f3f3;
+  border-radius: 100%;
+  background-color: #f9f3f3;
+  padding: 25px 16px;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.cerc {
+  transform-origin: 0 0;
+  transition: transform .25s, visibility .25s ease-in;
+}
+
+.cerc:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  margin: auto;
+  /* width: 90vw; */
+  height: 40vh;
+  /* border: 3px solid black; */
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.container {
+  padding-bottom: 10px;
+}
+.copyright {
+  background: black;
+  color: white;
+  padding-top: 20px;
+  display: flex;
+}
+.footer-contact {
+  list-style: none;
+}
+.footer-contact >li >a {
+  background: black;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 20px;
+}
+.number{
+  background: black;
+  color: white;
+  font-size: 2.5em;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.down-links {
+background: black;
+display: flex;
+}
